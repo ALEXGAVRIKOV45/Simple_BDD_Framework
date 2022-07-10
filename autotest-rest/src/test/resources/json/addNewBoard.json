@@ -1,0 +1,31 @@
+{
+  "title": "Backlog",
+  "description": "test",
+  "top": 0,
+  "left": 0,
+  "default_card_type_id": 1,
+  "first_image_is_cover": false,
+  "reset_lane_spent_time": false,
+  "automove_cards": false,
+  "backward_moves_enabled": false,
+  "auto_assign_enabled": true,
+  "sort_order":1,
+  "columns": [
+    {
+      "title": "Карточка для изучения API",
+      "sort_order": 1,
+      "type": 1
+    }
+  ],
+  "external_id": 20,
+  "lanes": [
+    {
+      "id": 1,
+      "title": "Первая задача",
+      "sort_order": 1,
+      "board_id": 1,
+      "condition": 1,
+      "external_id": null
+    }
+  ]
+}

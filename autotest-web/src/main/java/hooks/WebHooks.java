@@ -56,7 +56,8 @@ public class WebHooks {
     }
 
     @After
-    public void close() {
+    public void close() throws InterruptedException {
+        Thread.sleep(5000);
         WebDriverRunner.closeWebDriver();
         Environment.demountDriver();
     }
