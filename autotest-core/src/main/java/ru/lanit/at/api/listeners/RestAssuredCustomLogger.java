@@ -44,9 +44,11 @@ public class RestAssuredCustomLogger implements Filter {
                 .append("=")
                 .append(replaceVarsIfPresent(v))
                 .append("\n"));
-        stringBuilder.append("Request Body: \n")
-                .append(replaceVarsIfPresent(requestSpec.getBody()))
-                .append("\n");
+        if (stringBuilder.indexOf("PUT") == -1 ) {
+            stringBuilder.append("Request Body: \n")
+                    .append(replaceVarsIfPresent(requestSpec.getBody()))
+                    .append("\n");
+        }
         stringBuilder.append("------------- RESPONSE -------------\n");
         stringBuilder.append("Status code: ")
                 .append(response.statusCode())

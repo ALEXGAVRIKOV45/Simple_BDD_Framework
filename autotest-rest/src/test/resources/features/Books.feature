@@ -1,9 +1,9 @@
 #language:ru
-@test
+#@test
 
-Функционал: Образец GET запроса
+Функционал: Trello API_bdd
 
-  Сценарий: Запрос в bookstore к книге Just Spring Integration
+  Сценарий: Создание и настройка элементов системы Kaiten
 
     Когда создать контекстные переменные
       | book | Just Spring Integration |

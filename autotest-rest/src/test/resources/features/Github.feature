@@ -1,5 +1,5 @@
 #language:ru
-@test
+#@test
 
 Функционал: Selenide github test
   - Выполнение запроса в репозиторий selenide

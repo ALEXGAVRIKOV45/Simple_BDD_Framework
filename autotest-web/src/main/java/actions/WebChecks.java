@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import ru.lanit.at.utils.ErrorMessage;
 import ru.lanit.at.web.pagecontext.Environment;
+import ru.lanit.at.web.pagecontext.PageManager;
 import ru.lanit.at.web.properties.WebConfigurations;
 
 import java.time.Duration;
@@ -29,6 +30,16 @@ public class WebChecks {
                 System.getenv());
         return timeout == null ? cfg.webDriverTimeoutSeconds() : timeout;
     }
+
+    /**
+     * Обновляет страницу
+     *
+     *
+     */
+    public static void pageRefresh() {
+        DRIVER.navigate().refresh();
+    }
+
 
     /**
      * Проверяет что текущий url равен переданному
